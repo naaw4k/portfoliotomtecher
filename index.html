@@ -1,730 +1,617 @@
-/* =========================================
-   VARIABLES
-========================================= */
+```html
+<!DOCTYPE html>
+<html lang="fr">
 
-:root {
-    --background: #070b14;
-    --background-light: #0d1322;
-    --card: #101827;
-    --card-hover: #141f32;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    --text: #f5f7ff;
-    --text-secondary: #9ba6ba;
+    <title>Tom Techer | Portfolio</title>
 
-    --primary: #6c63ff;
-    --primary-light: #8b84ff;
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    --border: rgba(255, 255, 255, 0.08);
+<body>
 
-    --max-width: 1200px;
-}
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
 
+    <header>
+        <nav class="navbar">
 
-/* =========================================
-   RESET
-========================================= */
+            <a href="#accueil" class="logo">
+                <span>&lt;</span>Tom<span>/&gt;</span>
+            </a>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-html {
-    scroll-behavior: smooth;
-}
+        </nav>
+    </header>
 
-body {
-    background: var(--background);
-    color: var(--text);
 
-    font-family:
-        Inter,
-        Arial,
-        Helvetica,
-        sans-serif;
+    <main>
 
-    line-height: 1.6;
-}
+        <!-- ================================
+             ACCUEIL
+        ================================= -->
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+        <section id="accueil" class="hero">
 
+            <div class="hero-content">
 
-/* =========================================
-   NAVBAR
-========================================= */
+                <p class="welcome">
+                    BIENVENUE SUR MON PORTFOLIO
+                </p>
 
-header {
-    position: fixed;
+                <h1>
+                    Bonjour,<br>
+                    je suis <span>Tom Techer</span>
+                </h1>
 
-    top: 0;
-    left: 0;
+                <p class="description">
+                    J'ai 19 ans et je suis actuellement étudiant en
+                    <strong>BTS SIO</strong> — Services Informatiques
+                    aux Organisations.
+                </p>
 
-    width: 100%;
+                <p class="description">
+                    Passionné par l'informatique, les systèmes, les réseaux
+                    et le développement, je vous présente ici mon parcours,
+                    mes compétences et mes différents projets.
+                </p>
 
-    z-index: 1000;
+                <div class="buttons">
 
-    background: rgba(7, 11, 20, 0.75);
+                    <a href="#projets" class="btn primary">
+                        Découvrir mes projets
+                    </a>
 
-    backdrop-filter: blur(15px);
+                    <a href="#contact" class="btn secondary">
+                        Me contacter
+                    </a>
 
-    border-bottom: 1px solid var(--border);
-}
+                </div>
 
-.navbar {
-    max-width: var(--max-width);
+            </div>
 
-    height: 75px;
 
-    margin: auto;
+            <!-- Terminal -->
 
-    padding: 0 25px;
+            <div class="hero-card">
 
-    display: flex;
+                <div class="terminal">
 
-    align-items: center;
+                    <div class="terminal-top">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
 
-    justify-content: space-between;
-}
+                    <div class="terminal-content">
 
+                        <p>
+                            <span class="purple">const</span>
+                            <span class="blue">student</span> =
+                        </p>
 
-/* LOGO */
+                        <p class="indent">
+                            {
+                        </p>
 
-.logo {
-    font-size: 22px;
+                        <p class="indent2">
+                            name:
+                            <span class="green-text">
+                                "Tom Techer"
+                            </span>,
+                        </p>
 
-    font-weight: 800;
+                        <p class="indent2">
+                            age:
+                            <span class="orange">
+                                19
+                            </span>,
+                        </p>
 
-    letter-spacing: -1px;
-}
+                        <p class="indent2">
+                            formation:
+                            <span class="green-text">
+                                "BTS SIO"
+                            </span>,
+                        </p>
 
-.logo span {
-    color: var(--primary-light);
-}
+                        <p class="indent2">
+                            domaine:
+                            <span class="green-text">
+                                "Informatique"
+                            </span>
+                        </p>
 
+                        <p class="indent">
+                            };
+                        </p>
 
-/* NAVIGATION */
+                        <p class="cursor">_</p>
 
-.nav-links {
-    display: flex;
+                    </div>
 
-    list-style: none;
+                </div>
 
-    gap: 35px;
-}
+            </div>
 
-.nav-links a {
-    color: var(--text-secondary);
+        </section>
 
-    font-size: 14px;
 
-    transition: 0.3s;
-}
+        <!-- ================================
+             À PROPOS
+        ================================= -->
 
-.nav-links a:hover {
-    color: white;
-}
+        <section id="apropos" class="section">
 
+            <div class="section-title">
 
-/* =========================================
-   HERO
-========================================= */
+                <p>01 — À PROPOS</p>
 
-.hero {
-    min-height: 100vh;
+                <h2>Qui suis-je ?</h2>
 
-    max-width: var(--max-width);
+            </div>
 
-    margin: auto;
 
-    padding: 150px 25px 100px;
+            <div class="about">
 
-    display: grid;
+                <div class="about-text">
 
-    grid-template-columns: 1.2fr 0.8fr;
+                    <p>
+                        Je m'appelle <strong>Tom Techer</strong>, j'ai 19 ans
+                        et je suis actuellement étudiant en
+                        <strong>BTS SIO</strong>.
+                    </p>
 
-    align-items: center;
+                    <p>
+                        Le BTS Services Informatiques aux Organisations
+                        me permet de développer mes connaissances dans
+                        différents domaines de l'informatique.
+                    </p>
 
-    gap: 70px;
-}
+                    <p>
+                        Je m'intéresse particulièrement aux systèmes,
+                        aux réseaux, à la virtualisation, aux serveurs
+                        et au développement web.
+                    </p>
 
+                    <p>
+                        À travers mes projets scolaires et personnels,
+                        je cherche constamment à améliorer mes compétences
+                        et à découvrir de nouvelles technologies.
+                    </p>
 
-/* HERO TEXT */
+                </div>
 
-.welcome {
-    color: var(--primary-light);
 
-    font-size: 13px;
+                <div class="about-info">
 
-    font-weight: 700;
+                    <div class="info-card">
 
-    letter-spacing: 3px;
+                        <span>🎓</span>
 
-    margin-bottom: 20px;
-}
+                        <h3>Formation</h3>
 
-.hero h1 {
-    font-size: clamp(50px, 7vw, 85px);
+                        <p>BTS SIO</p>
 
-    line-height: 1.05;
+                    </div>
 
-    letter-spacing: -4px;
 
-    margin-bottom: 30px;
-}
+                    <div class="info-card">
 
-.hero h1 span {
-    color: var(--primary-light);
-}
+                        <span>💻</span>
 
-.description {
-    max-width: 600px;
+                        <h3>Domaine</h3>
 
-    color: var(--text-secondary);
+                        <p>Informatique</p>
 
-    font-size: 18px;
+                    </div>
 
-    line-height: 1.8;
 
-    margin-bottom: 35px;
-}
+                    <div class="info-card">
 
+                        <span>🚀</span>
 
-/* BUTTONS */
+                        <h3>Objectif</h3>
 
-.buttons {
-    display: flex;
+                        <p>Progresser</p>
 
-    gap: 15px;
+                    </div>
 
-    flex-wrap: wrap;
-}
+                </div>
 
-.btn {
-    display: inline-block;
+            </div>
 
-    padding: 13px 23px;
+        </section>
 
-    border-radius: 8px;
 
-    font-weight: 600;
+        <!-- ================================
+             PARCOURS
+        ================================= -->
 
-    font-size: 14px;
+        <section id="parcours" class="section">
 
-    transition: 0.3s;
-}
+            <div class="section-title">
 
-.primary {
-    background: var(--primary);
+                <p>02 — PARCOURS</p>
 
-    color: white;
-}
+                <h2>Mon parcours</h2>
 
-.primary:hover {
-    background: var(--primary-light);
+            </div>
 
-    transform: translateY(-3px);
-}
 
-.secondary {
-    border: 1px solid var(--border);
+            <div class="timeline">
 
-    color: white;
-}
+                <div class="timeline-item">
 
-.secondary:hover {
-    background: var(--card);
-}
+                    <div class="timeline-date">
+                        BAC
+                    </div>
 
+                    <div class="timeline-content">
 
-/* =========================================
-   TERMINAL
-========================================= */
+                        <h3>Baccalauréat Professionnel</h3>
 
-.hero-card {
-    display: flex;
+                        <p>
+                            Formation dans le domaine des systèmes
+                            numériques et de l'informatique.
+                        </p>
 
-    justify-content: center;
-}
+                    </div>
 
-.terminal {
-    width: 100%;
+                </div>
 
-    max-width: 480px;
 
-    background: #090d16;
+                <div class="timeline-item">
 
-    border: 1px solid var(--border);
+                    <div class="timeline-date">
+                        BTS
+                    </div>
 
-    border-radius: 15px;
+                    <div class="timeline-content">
 
-    overflow: hidden;
+                        <h3>BTS SIO</h3>
 
-    box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.5);
-}
+                        <p>
+                            Étudiant en BTS Services Informatiques
+                            aux Organisations.
+                        </p>
 
-.terminal-top {
-    height: 45px;
+                    </div>
 
-    background: #111827;
+                </div>
 
-    display: flex;
 
-    align-items: center;
+                <div class="timeline-item">
 
-    gap: 8px;
+                    <div class="timeline-date">
+                        NOW
+                    </div>
 
-    padding: 0 15px;
-}
+                    <div class="timeline-content">
 
-.terminal-top span {
-    width: 12px;
+                        <h3>Projets & développement</h3>
 
-    height: 12px;
+                        <p>
+                            Développement de projets personnels et
+                            scolaires afin de renforcer mes compétences
+                            en informatique.
+                        </p>
 
-    border-radius: 50%;
-}
+                    </div>
 
-.red {
-    background: #ff5f57;
-}
+                </div>
 
-.yellow {
-    background: #ffbd2e;
-}
+            </div>
 
-.green {
-    background: #28c840;
-}
+        </section>
 
-.terminal-content {
-    padding: 30px;
 
-    font-family: "Courier New", monospace;
+        <!-- ================================
+             COMPÉTENCES
+        ================================= -->
 
-    font-size: 14px;
+        <section id="competences" class="section">
 
-    color: #d8dee9;
-}
+            <div class="section-title">
 
-.terminal-content p {
-    margin-bottom: 7px;
-}
+                <p>03 — COMPÉTENCES</p>
 
-.indent {
-    padding-left: 20px;
-}
+                <h2>Mes compétences</h2>
 
-.indent2 {
-    padding-left: 40px;
-}
+            </div>
 
-.purple {
-    color: #c792ea;
-}
 
-.blue {
-    color: #82aaff;
-}
+            <div class="skills">
 
-.green-text {
-    color: #c3e88d;
-}
 
-.orange {
-    color: #f78c6c;
-}
+                <div class="skill-card">
 
-.cursor {
-    color: var(--primary-light);
+                    <div class="skill-icon">
+                        &lt;/&gt;
+                    </div>
 
-    animation: blink 1s infinite;
-}
+                    <h3>Développement Web</h3>
 
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
+                    <p>
+                        Création de sites et interfaces web
+                        modernes et responsive.
+                    </p>
 
+                    <div class="tags">
 
-/* =========================================
-   SECTIONS
-========================================= */
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
 
-.section {
-    max-width: var(--max-width);
+                    </div>
 
-    margin: auto;
+                </div>
 
-    padding: 120px 25px;
-}
 
-.section-title {
-    margin-bottom: 60px;
-}
+                <div class="skill-card">
 
-.section-title p {
-    color: var(--primary-light);
+                    <div class="skill-icon">
+                        🌐
+                    </div>
 
-    font-size: 12px;
+                    <h3>Réseaux</h3>
 
-    font-weight: 700;
+                    <p>
+                        Compréhension et configuration des
+                        infrastructures réseaux.
+                    </p>
 
-    letter-spacing: 3px;
+                    <div class="tags">
 
-    margin-bottom: 10px;
-}
+                        <span>TCP/IP</span>
+                        <span>DNS</span>
+                        <span>DHCP</span>
 
-.section-title h2 {
-    font-size: 45px;
+                    </div>
 
-    letter-spacing: -2px;
-}
+                </div>
 
 
-/* =========================================
-   ABOUT
-========================================= */
+                <div class="skill-card">
 
-.about {
-    display: grid;
+                    <div class="skill-icon">
+                        🖥️
+                    </div>
 
-    grid-template-columns: 1fr 1fr;
+                    <h3>Systèmes</h3>
 
-    gap: 70px;
-}
+                    <p>
+                        Installation et administration de systèmes
+                        informatiques.
+                    </p>
 
-.about-text p {
-    color: var(--text-secondary);
+                    <div class="tags">
 
-    font-size: 17px;
+                        <span>Windows</span>
+                        <span>Linux</span>
 
-    margin-bottom: 20px;
-}
+                    </div>
 
-.about-text strong {
-    color: white;
-}
+                </div>
 
-.about-info {
-    display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+                <div class="skill-card">
 
-    gap: 15px;
-}
+                    <div class="skill-icon">
+                        ⚙️
+                    </div>
 
-.info-card {
-    background: var(--card);
+                    <h3>Infrastructure</h3>
 
-    border: 1px solid var(--border);
+                    <p>
+                        Mise en place de serveurs, virtualisation
+                        et services informatiques.
+                    </p>
 
-    padding: 25px 15px;
+                    <div class="tags">
 
-    border-radius: 12px;
+                        <span>Proxmox</span>
+                        <span>Docker</span>
+                        <span>Serveurs</span>
 
-    text-align: center;
+                    </div>
 
-    transition: 0.3s;
-}
+                </div>
 
-.info-card:hover {
-    transform: translateY(-5px);
 
-    background: var(--card-hover);
-}
+            </div>
 
-.info-card span {
-    font-size: 28px;
-}
+        </section>
 
-.info-card h3 {
-    font-size: 14px;
 
-    margin: 12px 0 5px;
-}
+        <!-- ================================
+             PROJETS
+        ================================= -->
 
-.info-card p {
-    color: var(--text-secondary);
+        <section id="projets" class="section">
 
-    font-size: 12px;
-}
+            <div class="section-title">
 
+                <p>04 — PROJETS</p>
 
-/* =========================================
-   SKILLS
-========================================= */
+                <h2>Mes réalisations</h2>
 
-.skills {
-    display: grid;
+            </div>
 
-    grid-template-columns: repeat(4, 1fr);
 
-    gap: 20px;
-}
+            <div class="projects">
 
-.skill-card {
-    background: var(--card);
 
-    border: 1px solid var(--border);
+                <article class="project-card">
 
-    padding: 30px;
+                    <div class="project-number">
+                        01
+                    </div>
 
-    border-radius: 14px;
+                    <h3>Portfolio personnel</h3>
 
-    transition: 0.3s;
-}
+                    <p>
+                        Création de mon portfolio personnel afin
+                        de présenter mon parcours, mes compétences
+                        et mes projets.
+                    </p>
 
-.skill-card:hover {
-    transform: translateY(-7px);
+                    <div class="tags">
 
-    background: var(--card-hover);
-}
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>GitHub</span>
 
-.skill-icon {
-    font-size: 30px;
+                    </div>
 
-    color: var(--primary-light);
+                    <a href="#" class="project-link">
+                        Voir le projet →
+                    </a>
 
-    margin-bottom: 20px;
-}
+                </article>
 
-.skill-card h3 {
-    margin-bottom: 10px;
-}
 
-.skill-card p {
-    color: var(--text-secondary);
+                <article class="project-card">
 
-    font-size: 14px;
+                    <div class="project-number">
+                        02
+                    </div>
 
-    margin-bottom: 20px;
-}
+                    <h3>Infrastructure serveur</h3>
 
+                    <p>
+                        Mise en place d'une infrastructure virtuelle
+                        avec plusieurs services et environnements
+                        informatiques.
+                    </p>
 
-/* TAGS */
+                    <div class="tags">
 
-.tags {
-    display: flex;
+                        <span>Linux</span>
+                        <span>Proxmox</span>
+                        <span>Docker</span>
 
-    flex-wrap: wrap;
+                    </div>
 
-    gap: 7px;
-}
+                    <a href="#" class="project-link">
+                        Voir le projet →
+                    </a>
 
-.tags span {
-    padding: 5px 9px;
+                </article>
 
-    border-radius: 5px;
 
-    background: rgba(108, 99, 255, 0.1);
+                <article class="project-card">
 
-    color: var(--primary-light);
+                    <div class="project-number">
+                        03
+                    </div>
 
-    font-size: 11px;
+                    <h3>Projet BTS SIO</h3>
 
-    font-weight: 600;
-}
+                    <p>
+                        Projet réalisé dans le cadre de ma formation
+                        en BTS Services Informatiques aux Organisations.
+                    </p>
 
+                    <div class="tags">
 
-/* =========================================
-   PROJECTS
-========================================= */
+                        <span>BTS SIO</span>
+                        <span>Réseau</span>
+                        <span>Système</span>
 
-.projects {
-    display: grid;
+                    </div>
 
-    grid-template-columns: repeat(3, 1fr);
+                    <a href="#" class="project-link">
+                        Voir le projet →
+                    </a>
 
-    gap: 20px;
-}
+                </article>
 
-.project-card {
-    position: relative;
 
-    background: var(--card);
+            </div>
 
-    border: 1px solid var(--border);
+        </section>
 
-    padding: 35px;
 
-    border-radius: 14px;
+        <!-- ================================
+             CONTACT
+        ================================= -->
 
-    transition: 0.3s;
-}
+        <section id="contact" class="section contact">
 
-.project-card:hover {
-    transform: translateY(-7px);
+            <div class="section-title">
 
-    background: var(--card-hover);
-}
+                <p>05 — CONTACT</p>
 
-.project-number {
-    color: var(--primary-light);
+                <h2>Me contacter</h2>
 
-    font-family: monospace;
+            </div>
 
-    margin-bottom: 20px;
-}
+            <p>
+                Vous souhaitez en savoir plus sur mon parcours,
+                mes compétences ou mes projets ?
+            </p>
 
-.project-card h3 {
-    font-size: 22px;
+            <div class="buttons">
 
-    margin-bottom: 15px;
-}
+                <a
+                    href="mailto:tonemail@example.com"
+                    class="btn primary"
+                >
+                    📧 Envoyer un email
+                </a>
 
-.project-card p {
-    color: var(--text-secondary);
+                <a
+                    href="https://github.com/naaw4k"
+                    target="_blank"
+                    class="btn secondary"
+                >
+                    GitHub
+                </a>
 
-    font-size: 14px;
+            </div>
 
-    margin-bottom: 25px;
-}
+        </section>
 
-.project-link {
-    display: inline-block;
+    </main>
 
-    margin-top: 25px;
 
-    color: var(--primary-light);
+    <!-- ================================
+         FOOTER
+    ================================= -->
 
-    font-size: 14px;
+    <footer>
 
-    font-weight: 600;
-}
+        <div class="logo">
 
+            <span>&lt;</span>Tom<span>/&gt;</span>
 
-/* =========================================
-   CONTACT
-========================================= */
+        </div>
 
-.contact {
-    text-align: center;
-}
+        <p>
+            © 2026 Tom Techer — Portfolio
+        </p>
 
-.contact .section-title {
-    margin-bottom: 30px;
-}
+        <p>
+            Étudiant en BTS SIO
+        </p>
 
-.contact > p {
-    color: var(--text-secondary);
+    </footer>
 
-    margin-bottom: 30px;
-}
 
+</body>
 
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    border-top: 1px solid var(--border);
-
-    padding: 40px 25px;
-
-    text-align: center;
-
-    color: var(--text-secondary);
-}
-
-footer .logo {
-    margin-bottom: 15px;
-
-    color: white;
-}
-
-footer p {
-    font-size: 13px;
-
-    margin: 5px;
-}
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 900px) {
-
-    .hero {
-        grid-template-columns: 1fr;
-
-        text-align: center;
-    }
-
-    .description {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .buttons {
-        justify-content: center;
-    }
-
-    .hero-card {
-        margin-top: 30px;
-    }
-
-    .about {
-        grid-template-columns: 1fr;
-    }
-
-    .skills {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .projects {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero {
-        padding-top: 120px;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-
-        letter-spacing: -2px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .section {
-        padding: 80px 20px;
-    }
-
-    .section-title h2 {
-        font-size: 35px;
-    }
-
-    .skills {
-        grid-template-columns: 1fr;
-    }
-
-    .about-info {
-        grid-template-columns: 1fr;
-    }
-
-    .terminal-content {
-        font-size: 11px;
-
-        padding: 20px;
-    }
-
-}
+</html>
+```
