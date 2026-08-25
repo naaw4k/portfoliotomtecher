@@ -1,617 +1,370 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tom Techer | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tom Techer | Portfolio</title>
+<meta name="description" content="Portfolio de Tom Techer, étudiant en BTS SIO — systèmes, réseaux et développement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ================================
-         NAVIGATION
-    ================================= -->
-
-    <header>
-        <nav class="navbar">
-
-            <a href="#accueil" class="logo">
-                <span>&lt;</span>Tom<span>/&gt;</span>
-            </a>
-
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-
-    <main>
-
-        <!-- ================================
-             ACCUEIL
-        ================================= -->
-
-        <section id="accueil" class="hero">
-
-            <div class="hero-content">
-
-                <p class="welcome">
-                    BIENVENUE SUR MON PORTFOLIO
-                </p>
-
-                <h1>
-                    Bonjour,<br>
-                    je suis <span>Tom Techer</span>
-                </h1>
-
-                <p class="description">
-                    J'ai 19 ans et je suis actuellement étudiant en
-                    <strong>BTS SIO</strong> — Services Informatiques
-                    aux Organisations.
-                </p>
-
-                <p class="description">
-                    Passionné par l'informatique, les systèmes, les réseaux
-                    et le développement, je vous présente ici mon parcours,
-                    mes compétences et mes différents projets.
-                </p>
-
-                <div class="buttons">
-
-                    <a href="#projets" class="btn primary">
-                        Découvrir mes projets
-                    </a>
-
-                    <a href="#contact" class="btn secondary">
-                        Me contacter
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Terminal -->
-
-            <div class="hero-card">
-
-                <div class="terminal">
-
-                    <div class="terminal-top">
-                        <span class="red"></span>
-                        <span class="yellow"></span>
-                        <span class="green"></span>
-                    </div>
-
-                    <div class="terminal-content">
-
-                        <p>
-                            <span class="purple">const</span>
-                            <span class="blue">student</span> =
-                        </p>
-
-                        <p class="indent">
-                            {
-                        </p>
-
-                        <p class="indent2">
-                            name:
-                            <span class="green-text">
-                                "Tom Techer"
-                            </span>,
-                        </p>
-
-                        <p class="indent2">
-                            age:
-                            <span class="orange">
-                                19
-                            </span>,
-                        </p>
-
-                        <p class="indent2">
-                            formation:
-                            <span class="green-text">
-                                "BTS SIO"
-                            </span>,
-                        </p>
-
-                        <p class="indent2">
-                            domaine:
-                            <span class="green-text">
-                                "Informatique"
-                            </span>
-                        </p>
-
-                        <p class="indent">
-                            };
-                        </p>
-
-                        <p class="cursor">_</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             À PROPOS
-        ================================= -->
-
-        <section id="apropos" class="section">
-
-            <div class="section-title">
-
-                <p>01 — À PROPOS</p>
-
-                <h2>Qui suis-je ?</h2>
-
-            </div>
-
-
-            <div class="about">
-
-                <div class="about-text">
-
-                    <p>
-                        Je m'appelle <strong>Tom Techer</strong>, j'ai 19 ans
-                        et je suis actuellement étudiant en
-                        <strong>BTS SIO</strong>.
-                    </p>
-
-                    <p>
-                        Le BTS Services Informatiques aux Organisations
-                        me permet de développer mes connaissances dans
-                        différents domaines de l'informatique.
-                    </p>
-
-                    <p>
-                        Je m'intéresse particulièrement aux systèmes,
-                        aux réseaux, à la virtualisation, aux serveurs
-                        et au développement web.
-                    </p>
-
-                    <p>
-                        À travers mes projets scolaires et personnels,
-                        je cherche constamment à améliorer mes compétences
-                        et à découvrir de nouvelles technologies.
-                    </p>
-
-                </div>
-
-
-                <div class="about-info">
-
-                    <div class="info-card">
-
-                        <span>🎓</span>
-
-                        <h3>Formation</h3>
-
-                        <p>BTS SIO</p>
-
-                    </div>
-
-
-                    <div class="info-card">
-
-                        <span>💻</span>
-
-                        <h3>Domaine</h3>
-
-                        <p>Informatique</p>
-
-                    </div>
-
-
-                    <div class="info-card">
-
-                        <span>🚀</span>
-
-                        <h3>Objectif</h3>
-
-                        <p>Progresser</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             PARCOURS
-        ================================= -->
-
-        <section id="parcours" class="section">
-
-            <div class="section-title">
-
-                <p>02 — PARCOURS</p>
-
-                <h2>Mon parcours</h2>
-
-            </div>
-
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        BAC
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>Baccalauréat Professionnel</h3>
-
-                        <p>
-                            Formation dans le domaine des systèmes
-                            numériques et de l'informatique.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        BTS
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>BTS SIO</h3>
-
-                        <p>
-                            Étudiant en BTS Services Informatiques
-                            aux Organisations.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        NOW
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>Projets & développement</h3>
-
-                        <p>
-                            Développement de projets personnels et
-                            scolaires afin de renforcer mes compétences
-                            en informatique.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             COMPÉTENCES
-        ================================= -->
-
-        <section id="competences" class="section">
-
-            <div class="section-title">
-
-                <p>03 — COMPÉTENCES</p>
-
-                <h2>Mes compétences</h2>
-
-            </div>
-
-
-            <div class="skills">
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        &lt;/&gt;
-                    </div>
-
-                    <h3>Développement Web</h3>
-
-                    <p>
-                        Création de sites et interfaces web
-                        modernes et responsive.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        🌐
-                    </div>
-
-                    <h3>Réseaux</h3>
-
-                    <p>
-                        Compréhension et configuration des
-                        infrastructures réseaux.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>TCP/IP</span>
-                        <span>DNS</span>
-                        <span>DHCP</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        🖥️
-                    </div>
-
-                    <h3>Systèmes</h3>
-
-                    <p>
-                        Installation et administration de systèmes
-                        informatiques.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Windows</span>
-                        <span>Linux</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        ⚙️
-                    </div>
-
-                    <h3>Infrastructure</h3>
-
-                    <p>
-                        Mise en place de serveurs, virtualisation
-                        et services informatiques.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Proxmox</span>
-                        <span>Docker</span>
-                        <span>Serveurs</span>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             PROJETS
-        ================================= -->
-
-        <section id="projets" class="section">
-
-            <div class="section-title">
-
-                <p>04 — PROJETS</p>
-
-                <h2>Mes réalisations</h2>
-
-            </div>
-
-
-            <div class="projects">
-
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                    <h3>Portfolio personnel</h3>
-
-                    <p>
-                        Création de mon portfolio personnel afin
-                        de présenter mon parcours, mes compétences
-                        et mes projets.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>GitHub</span>
-
-                    </div>
-
-                    <a href="#" class="project-link">
-                        Voir le projet →
-                    </a>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                    <h3>Infrastructure serveur</h3>
-
-                    <p>
-                        Mise en place d'une infrastructure virtuelle
-                        avec plusieurs services et environnements
-                        informatiques.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Linux</span>
-                        <span>Proxmox</span>
-                        <span>Docker</span>
-
-                    </div>
-
-                    <a href="#" class="project-link">
-                        Voir le projet →
-                    </a>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        03
-                    </div>
-
-                    <h3>Projet BTS SIO</h3>
-
-                    <p>
-                        Projet réalisé dans le cadre de ma formation
-                        en BTS Services Informatiques aux Organisations.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>BTS SIO</span>
-                        <span>Réseau</span>
-                        <span>Système</span>
-
-                    </div>
-
-                    <a href="#" class="project-link">
-                        Voir le projet →
-                    </a>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             CONTACT
-        ================================= -->
-
-        <section id="contact" class="section contact">
-
-            <div class="section-title">
-
-                <p>05 — CONTACT</p>
-
-                <h2>Me contacter</h2>
-
-            </div>
-
-            <p>
-                Vous souhaitez en savoir plus sur mon parcours,
-                mes compétences ou mes projets ?
-            </p>
-
-            <div class="buttons">
-
-                <a
-                    href="mailto:tonemail@example.com"
-                    class="btn primary"
-                >
-                    📧 Envoyer un email
-                </a>
-
-                <a
-                    href="https://github.com/naaw4k"
-                    target="_blank"
-                    class="btn secondary"
-                >
-                    GitHub
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================================
-         FOOTER
-    ================================= -->
-
-    <footer>
-
-        <div class="logo">
-
-            <span>&lt;</span>Tom<span>/&gt;</span>
-
+<!-- ================================
+     NAVIGATION
+================================= -->
+<header>
+  <nav class="navbar">
+    <a href="#accueil" class="logo">tom<span>@</span>bts-sio<span class="prompt">:~$</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#accueil">accueil</a></li>
+      <li><a href="#apropos">whoami</a></li>
+      <li><a href="#parcours">parcours</a></li>
+      <li><a href="#competences">competences</a></li>
+      <li><a href="#projets">projets</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ================================
+       ACCUEIL
+  ================================= -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <p class="welcome"><span class="dot" aria-hidden="true"></span>STATUT&nbsp;: EN LIGNE</p>
+
+      <h1>Bonjour,<br>je suis <span>Tom Techer</span></h1>
+
+      <p class="description">
+        J'ai 19 ans et je suis actuellement étudiant en <strong>BTS SIO</strong>
+        — Services Informatiques aux Organisations.
+      </p>
+      <p class="description">
+        Passionné par l'informatique, les systèmes, les réseaux et le
+        développement, je vous présente ici mon parcours, mes compétences
+        et mes différents projets.
+      </p>
+
+      <div class="buttons">
+        <a href="#projets" class="btn primary">Découvrir mes projets</a>
+        <a href="#contact" class="btn secondary">Me contacter</a>
+      </div>
+    </div>
+
+    <!-- Terminal -->
+    <div class="hero-card">
+      <div class="terminal">
+        <div class="terminal-top">
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+          <span class="terminal-title">tom@bts-sio — zsh</span>
         </div>
+        <div class="terminal-content" id="terminalContent" aria-hidden="true">
+          <!-- rempli via JS (typing effect) -->
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ================================
+       À PROPOS
+  ================================= -->
+  <section id="apropos" class="section reveal">
+    <div class="section-title">
+      <p class="eyebrow"><span class="chevron">$</span> whoami</p>
+      <h2>Qui suis-je&nbsp;?</h2>
+    </div>
+
+    <div class="about">
+      <div class="about-text">
         <p>
-            © 2026 Tom Techer — Portfolio
+          Je m'appelle <strong>Tom Techer</strong>, j'ai 19 ans et je suis
+          actuellement étudiant en <strong>BTS SIO</strong>.
         </p>
-
         <p>
-            Étudiant en BTS SIO
+          Le BTS Services Informatiques aux Organisations me permet de
+          développer mes connaissances dans différents domaines de
+          l'informatique.
         </p>
+        <p>
+          Je m'intéresse particulièrement aux systèmes, aux réseaux, à la
+          virtualisation, aux serveurs et au développement web.
+        </p>
+        <p>
+          À travers mes projets scolaires et personnels, je cherche
+          constamment à améliorer mes compétences et à découvrir de
+          nouvelles technologies.
+        </p>
+      </div>
 
-    </footer>
+      <div class="about-info">
+        <div class="info-card">
+          <span class="info-label">formation</span>
+          <p class="info-value">BTS SIO</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">domaine</span>
+          <p class="info-value">Informatique</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">objectif</span>
+          <p class="info-value">Progresser</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ================================
+       PARCOURS
+  ================================= -->
+  <section id="parcours" class="section reveal">
+    <div class="section-title">
+      <p class="eyebrow"><span class="chevron">$</span> cat parcours.log</p>
+      <h2>Mon parcours</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">BAC</div>
+        <div class="timeline-content">
+          <h3>Baccalauréat Professionnel</h3>
+          <p>Formation dans le domaine des systèmes numériques et de l'informatique.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">BTS</div>
+        <div class="timeline-content">
+          <h3>BTS SIO</h3>
+          <p>Étudiant en BTS Services Informatiques aux Organisations.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">NOW</div>
+        <div class="timeline-content">
+          <h3>Projets &amp; développement</h3>
+          <p>Développement de projets personnels et scolaires afin de renforcer mes compétences en informatique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       COMPÉTENCES
+  ================================= -->
+  <section id="competences" class="section reveal">
+    <div class="section-title">
+      <p class="eyebrow"><span class="chevron">$</span> ls -la ./competences</p>
+      <h2>Mes compétences</h2>
+    </div>
+
+    <div class="skills">
+      <div class="skill-card">
+        <div class="skill-icon">&lt;/&gt;</div>
+        <h3>Développement Web</h3>
+        <p>Création de sites et interfaces web modernes et responsive.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">net</div>
+        <h3>Réseaux</h3>
+        <p>Compréhension et configuration des infrastructures réseaux.</p>
+        <div class="tags">
+          <span>TCP/IP</span><span>DNS</span><span>DHCP</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">sys</div>
+        <h3>Systèmes</h3>
+        <p>Installation et administration de systèmes informatiques.</p>
+        <div class="tags">
+          <span>Windows</span><span>Linux</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">$_</div>
+        <h3>Infrastructure</h3>
+        <p>Mise en place de serveurs, virtualisation et services informatiques.</p>
+        <div class="tags">
+          <span>Proxmox</span><span>Docker</span><span>Serveurs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       PROJETS
+  ================================= -->
+  <section id="projets" class="section reveal">
+    <div class="section-title">
+      <p class="eyebrow"><span class="chevron">$</span> ls ~/projets</p>
+      <h2>Mes réalisations</h2>
+    </div>
+
+    <div class="projects">
+      <article class="project-card">
+        <div class="project-number">01</div>
+        <h3>Portfolio personnel</h3>
+        <p>Création de mon portfolio personnel afin de présenter mon parcours, mes compétences et mes projets.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>GitHub</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">02</div>
+        <h3>Infrastructure serveur</h3>
+        <p>Mise en place d'une infrastructure virtuelle avec plusieurs services et environnements informatiques.</p>
+        <div class="tags">
+          <span>Linux</span><span>Proxmox</span><span>Docker</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">03</div>
+        <h3>Projet BTS SIO</h3>
+        <p>Projet réalisé dans le cadre de ma formation en BTS Services Informatiques aux Organisations.</p>
+        <div class="tags">
+          <span>BTS SIO</span><span>Réseau</span><span>Système</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================================
+       CONTACT
+  ================================= -->
+  <section id="contact" class="section contact reveal">
+    <div class="section-title">
+      <p class="eyebrow"><span class="chevron">$</span> ping contact</p>
+      <h2>Me contacter</h2>
+    </div>
+
+    <p>Vous souhaitez en savoir plus sur mon parcours, mes compétences ou mes projets&nbsp;?</p>
+
+    <div class="buttons">
+      <a href="mailto:tonemail@example.com" class="btn primary">Envoyer un email</a>
+      <a href="https://github.com/naaw4k" target="_blank" rel="noopener" class="btn secondary">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================================
+     FOOTER
+================================= -->
+<footer>
+  <div class="logo">tom<span>@</span>bts-sio<span class="prompt">:~$</span></div>
+  <p>© 2026 Tom Techer — Portfolio</p>
+  <p class="footer-sub">connexion fermée — étudiant en BTS SIO</p>
+</footer>
+
+<script>
+/* ---------- Menu mobile ---------- */
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+navToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  navToggle.setAttribute('aria-expanded', isOpen);
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+/* ---------- Terminal : effet de frappe ---------- */
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const terminalLines = [
+  { html: '<span class="purple">const</span> <span class="blue">student</span> = {', indent: 0 },
+  { html: 'name: <span class="green-text">"Tom Techer"</span>,', indent: 1 },
+  { html: 'age: <span class="orange">19</span>,', indent: 1 },
+  { html: 'formation: <span class="green-text">"BTS SIO"</span>,', indent: 1 },
+  { html: 'domaine: <span class="green-text">"Informatique"</span>', indent: 1 },
+  { html: '};', indent: 0 }
+];
+
+const terminalEl = document.getElementById('terminalContent');
+
+function renderTerminalInstant() {
+  terminalEl.innerHTML = terminalLines
+    .map(l => `<p class="${l.indent ? 'indent' : ''}">${l.html}</p>`)
+    .join('') + '<p class="cursor">_</p>';
+}
+
+async function typeTerminal() {
+  terminalEl.innerHTML = '';
+  for (const line of terminalLines) {
+    const p = document.createElement('p');
+    if (line.indent) p.classList.add('indent');
+    terminalEl.appendChild(p);
+
+    // Découpe simple : texte visible tapé caractère par caractère,
+    // le HTML final est réappliqué à la fin de la ligne.
+    const plain = line.html.replace(/<[^>]+>/g, '');
+    for (let i = 0; i < plain.length; i++) {
+      p.textContent = plain.slice(0, i + 1);
+      await new Promise(r => setTimeout(r, 14));
+    }
+    p.innerHTML = line.html;
+    await new Promise(r => setTimeout(r, 90));
+  }
+  const cursor = document.createElement('p');
+  cursor.className = 'cursor';
+  cursor.textContent = '_';
+  terminalEl.appendChild(cursor);
+}
+
+if (reduceMotion) {
+  renderTerminalInstant();
+} else {
+  typeTerminal();
+}
+
+/* ---------- Apparition au scroll ---------- */
+const revealEls = document.querySelectorAll('.reveal');
+
+if (reduceMotion || !('IntersectionObserver' in window)) {
+  revealEls.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealEls.forEach(el => observer.observe(el));
+}
+</script>
 
 </body>
-
 </html>
-```
